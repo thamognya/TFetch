@@ -6,14 +6,21 @@
 #
 # ------------------------------------------------
 
+# Variables
+
+TOPDIR := ./src/
+IVAR := -I. -I $(TOPDIR)/include/
+
+# Process
+
 TARGET   = tfetch
 
 CC       = gcc
-CFLAGS   = -std=c99 -Wall -I.
+CFLAGS   = -std=c99 -Wall $(IVAR)
 
 LINKER   = gcc
 # linking flags here
-LFLAGS   = -Wall -I. -lm
+LFLAGS   = -Wall $(IVAR) -lm
 
 SRCDIR   = src
 OBJDIR   = obj

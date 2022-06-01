@@ -1,5 +1,6 @@
 #include "main.h"
-#include "user-host-name.h"
+#include "./include/main.h"
+#include "./include/user-host-name.h"
 #include <stdio.h>
 
 /*int main(int argc, string argv[])
