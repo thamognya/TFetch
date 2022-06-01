@@ -1,12 +1,12 @@
 
 # ------------------------------------------------
-# Makefile for CatFetch
+# Makefile for TFetch
 #
 # Author: Thamognya Kodi <contact@thamognya.com>
 #
 # ------------------------------------------------
 
-TARGET   = catfetch
+TARGET   = TFetch
 
 CC       = gcc
 CFLAGS   = -std=c99 -Wall -I.
