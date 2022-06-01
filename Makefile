@@ -6,7 +6,7 @@
 #
 # ------------------------------------------------
 
-TARGET   = TFetch
+TARGET   = tfetch
 
 CC       = gcc
 CFLAGS   = -std=c99 -Wall -I.
@@ -42,3 +42,6 @@ clean:
 remove: clean
 	@$(rm) $(BINDIR)/$(TARGET)
 	@echo "Executable removed!"
+
+.PHONY: update
+

@@ -1,6 +1,7 @@
 #ifndef USERHOSTNAME_DOT_H
 #define USERHOSTNAME_DOT_H
 
-char hostname();
+int hostname();
+int username();
 
 #endif
