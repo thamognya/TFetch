@@ -1,4 +1,4 @@
-# JayFetch
+# TFetch
 
 This is a simple fetching application that is light weight and fast (as it is written in the programming language c).
 
