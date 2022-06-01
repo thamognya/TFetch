@@ -1,9 +1,8 @@
-#include "main.h"
 #include "user-host-name.h"
 #include <stdio.h>
 
-int main()
+int test()
 {
-	test();
+	printf("Tmp");
 	return 0;
 }
