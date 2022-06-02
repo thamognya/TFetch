@@ -10,6 +10,7 @@
 
 int hostname()
 {
+	// if linux then just use HOST_NAME_MAX else for macos use 1024
 	#ifdef __linux__
 		char hostname[HOST_NAME_MAX+1];
 		gethostname(hostname, HOST_NAME_MAX+1);
@@ -26,6 +27,7 @@ int hostname()
 
 int username()
 {
+	// if linux then just use LOGIN_NAME_MAX else for macos use 1024
 	#ifdef __linux__
 		char username[LOGIN_NAME_MAX+1];
 		getlogin_r(username, LOGIN_NAME_MAX+1);

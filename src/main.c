@@ -1,6 +1,9 @@
 #include "./include/main.h"
+// get functions hostname() and username()
 #include "./include/user-host-name.h"
+// get functions uptime()
 #include "./include/uptime.h"
+// get functions os()
 #include "./include/os.h"
 #include <stdio.h>
 
@@ -29,6 +32,7 @@
 
 int main()
 {
+    // if the os is windows then print error message else continue
     #ifdef _WIN32
         printf("%s\n", "This does not work on windows. If you would like to contribute to make this work make a pr or issue request in https://github.com/ThamognyaKodi/TFetch");
     #else

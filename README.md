@@ -14,6 +14,11 @@ This program is written by Thamognya Kodi. You can help me by just liking this r
 
 preprocessing directives:
 - https://sourceforge.net/p/predef/wiki/OperatingSystems/
+Library-list (apart from <stdio.h>):
+- <unistd.h>
+- <limits.h>
+- <stdlib.h>
+- <sys/sysinfo.h>
 
 # Contributing
 
