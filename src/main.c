@@ -1,6 +1,7 @@
 #include "./include/main.h"
 #include "./include/user-host-name.h"
 #include "./include/uptime.h"
+#include "./include/os.h"
 #include <stdio.h>
 
 /*int main(int argc, string argv[])
@@ -34,6 +35,7 @@ int main()
         hostname();
         username();
         test();
+        os();
     #endif
 
     return 0;
