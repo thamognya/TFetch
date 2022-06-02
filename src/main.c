@@ -1,4 +1,3 @@
-#include "main.h"
 #include "./include/main.h"
 #include "./include/user-host-name.h"
 #include <stdio.h>
