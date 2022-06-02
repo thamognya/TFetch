@@ -22,4 +22,4 @@ To start contributing, to have a consistent environment you can use the `docker-
 
 The following licenses are present in the licenses folder.
 
-If you are going to use my website without my permision by forking it, follow the MIT and GPL-3.0-or-later licenses and do not use my voxel model.
+If you are going to use my code without my permision by forking it, you must follow both the MIT and GPL-3.0-or-later licenses.
