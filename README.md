@@ -12,6 +12,10 @@ Each distro is represented by an ascii of either a bird or the distro itself (at
 
 This program is written by Thamognya Kodi. You can help me by just liking this repo if you would like.
 
+# Contributing
+
+To start contributing, to have a consistent environment you can use the `docker-compose up -d` and then 
+
 # License
 
 `SPDX-License-Identifier: MIT AND GPL-3.0-or-later`
