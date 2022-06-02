@@ -10,7 +10,7 @@
 
 int hostname()
 {
-	// int HOST_NAME_MAX = 1024; // for mac only
+	//int HOST_NAME_MAX = 1024; // for mac only
 	char hostname[HOST_NAME_MAX+1];
 	gethostname(hostname, HOST_NAME_MAX+1);
 	printf("Hostname: %s\n", hostname);
@@ -19,7 +19,7 @@ int hostname()
 
 int username()
 {
-	// int LOGIN_NAME_MAX = 1024; // for mac only
+	//int LOGIN_NAME_MAX = 1024; // for mac only
 	char username[LOGIN_NAME_MAX+1];
 	getlogin_r(username, LOGIN_NAME_MAX+1);
 	printf("Username: %s\n", username);
