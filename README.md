@@ -2,8 +2,6 @@
 
 This is a simple fetching application that is light weight and fast (as it is written in the programming language c).
 
-Each distro is represented by an ascii of either a bird or the distro itself (at the user's choice).
-
 ## Usage
 
 ## Pictures
