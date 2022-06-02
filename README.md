@@ -10,6 +10,11 @@ This is a simple fetching application that is light weight and fast (as it is wr
 
 This program is written by Thamognya Kodi. You can help me by just liking this repo if you would like.
 
+# Sources used 
+
+preprocessing directives:
+- https://sourceforge.net/p/predef/wiki/OperatingSystems/
+
 # Contributing
 
 To start contributing, to have a consistent environment you can use the `docker-compose up -d` and then 
