@@ -10,18 +10,18 @@
 
 int hostname()
 {
+	// int HOST_NAME_MAX = 1024; // for mac only
 	char hostname[HOST_NAME_MAX+1];
 	gethostname(hostname, HOST_NAME_MAX+1);
-	// will change this later
 	printf("Hostname: %s\n", hostname);
   	return EXIT_SUCCESS;
 }
 
 int username()
 {
-	char *buf;
-	buf=(char *)malloc(10*sizeof(char));
-	buf=getlogin();
-	printf("Username: %s\n",buf);
-	return 0;
+	// int LOGIN_NAME_MAX = 1024; // for mac only
+	char username[LOGIN_NAME_MAX+1];
+	getlogin_r(username, LOGIN_NAME_MAX+1);
+	printf("Username: %s\n", username);
+  	return EXIT_SUCCESS;
 }
