@@ -28,8 +28,13 @@
 
 int main()
 {
-    hostname();
-    username();
-    test();
+    #ifdef _WIN32
+        printf("%s\n", "This does not work on windows. If you would like to contribute to make this work make a pr or issue request in https://github.com/ThamognyaKodi/TFetch");
+    #else
+        hostname();
+        username();
+        test();
+    #endif
+
     return 0;
 }
