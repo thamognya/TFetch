@@ -7,6 +7,8 @@
 #include "./include/os.h"
 // get the functions in line-break
 #include "./include/line-break.h"
+// get the functions shell()
+#include "./include/shell.h"
 // standard library
 #include <stdio.h>
 
@@ -39,10 +41,15 @@ int main()
     #ifdef _WIN32
         printf("%s\n", "This does not work on windows. If you would like to contribute to make this work make a pr or issue request in https://github.com/ThamognyaKodi/TFetch");
     #else
+        printf("\n"); // tmp
+
         username_hostname();
         linebreak();
         os();
+        shell();
         uptime();
+
+        printf("\n"); // tmp
     #endif
 
     return 0;
