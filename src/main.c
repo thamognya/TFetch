@@ -5,6 +5,9 @@
 #include "./include/uptime.h"
 // get functions os()
 #include "./include/os.h"
+// get the functions in line-break
+#include "./include/line-break.h"
+// standard library
 #include <stdio.h>
 
 /*int main(int argc, string argv[])
@@ -36,10 +39,10 @@ int main()
     #ifdef _WIN32
         printf("%s\n", "This does not work on windows. If you would like to contribute to make this work make a pr or issue request in https://github.com/ThamognyaKodi/TFetch");
     #else
-        hostname();
-        username();
-        test();
+        username_hostname();
+        linebreak();
         os();
+        test();
     #endif
 
     return 0;
