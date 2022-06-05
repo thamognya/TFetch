@@ -1,11 +1,7 @@
-#define _POSIX_SOURCE
-
-#include "./include/os.h"
+#include "./include/kernel.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/utsname.h>
-#include <regex.h>
-
 // colors
 #define RED   "\x1B[31m"
 #define GRN   "\x1B[32m"
@@ -16,9 +12,8 @@
 #define WHT   "\x1B[37m"
 #define RESET "\x1B[0m"
 
-int os()
+int kernel()
 {
-    #ifdef __linux__
     // code inspired from https://stackoverflow.com/questions/35095887/print-system-name-in-c 
     struct utsname uts;
     if(uname(&uts) !=0 )
@@ -27,21 +22,10 @@ int os()
     }
     // print the OS of linux
     // get the os name instead of os and kernel
-
-    char command[50];
-    strcpy( command, "uname -o" );
-    system(command);
     
-    printf(RED "%s" RESET, "OS: ");
+    printf(RED "%s" RESET, "KERNEL: ");
     printf("%s", uts.release);
-
     printf("\n");
 
     return EXIT_SUCCESS;
-    #elif __APPLE__
-        printf(RED "%s" RESET, "OS: ");
-        printf("%s", "macOS");
-        printf("\n");
-        return 0;
-    #endif
 }
