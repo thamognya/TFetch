@@ -42,7 +42,7 @@ int main()
         username_hostname();
         linebreak();
         os();
-        test();
+        uptime();
     #endif
 
     return 0;

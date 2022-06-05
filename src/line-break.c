@@ -13,6 +13,6 @@
 int linebreak()
 {
     // print the line break
-    printf(RED "------------" RESET "\n");
+    printf(WHT "------------" RESET "\n");
     return 0;
 }

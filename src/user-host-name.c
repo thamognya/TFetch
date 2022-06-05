@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <unistd.h>
+
 // colors
 #define RED   "\x1B[31m"
 #define GRN   "\x1B[32m"
@@ -27,9 +28,9 @@ int username_hostname()
 		// get the username
 		char username[LOGIN_NAME_MAX+1];
 		getlogin_r(username, LOGIN_NAME_MAX+1);
-		printf(RED "%s" RESET, username);
+		printf(BLU "%s" RESET, username);
 		printf("@");
-		printf(RED "%s" RESET, hostname);
+		printf(BLU "%s" RESET, hostname);
 		printf("\n");
 	#elif __APPLE__
 		// get hostname
@@ -40,9 +41,9 @@ int username_hostname()
 		int LOGIN_NAME_MAX = 1024; // for mac only
 		char username[LOGIN_NAME_MAX+1];
 		getlogin_r(username, LOGIN_NAME_MAX+1);
-		printf(RED "%s" RESET, username);
+		printf(BLU "%s" RESET, username);
 		printf("@");
-		printf(RED "%s" RESET, hostname);
+		printf(BLU "%s" RESET, hostname);
 		printf("\n");
 	#endif
 
