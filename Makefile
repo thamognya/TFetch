@@ -55,15 +55,6 @@ remove: clean
 	@$(rm) $(BINDIR)/$(TARGET)
 	@echo "Executable removed!"
 
-.PHONY: install
-install:
-	make
-	cp ./bin/tfetch /usr/bin/
-
-.PHONY: uninstall
-install:
-	rm /usr/bin/tfetch
-
 .PHONY: doc
 doc:
 	mkdir -p ${DESTDIR}${MANDIR}/man1
