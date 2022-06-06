@@ -21,10 +21,10 @@ int memory()
         // make type info
         struct sysinfo info;
         sysinfo(&info);
-        printf(RED "%s" RESET, "RAM: ");
-        printf("%02ld", (((info.freeram)/1024)/1024));
+        printf(RED "%s" RESET, "FREE RAM / TOTAL RAM: ");
+        printf("%02ld", (((info.freeram + info.bufferram)/1024)/1024)); // total free ram = free + buffer/cache + swap total
         printf(BLU "%s" RESET, "/");
-        printf("%02ld", (((info.totalram)/1024)/1024));
+        printf("%02ld", (((info.totalram)/1024)/1024)); // total ram
         printf("\n");
         return 0;
     #elif __APPLE__

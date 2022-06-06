@@ -3,6 +3,7 @@
 #include "./include/os.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <sys/utsname.h>
 #include <regex.h>
 
