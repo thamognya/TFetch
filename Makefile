@@ -10,6 +10,11 @@
 
 TOPDIR := ./src/
 IVAR := -I. -I $(TOPDIR)/include/
+PREFIX=/usr/local
+BINDIR=${PREFIX}/bin
+DOCDIR=${PREFIX}/share/doc/TFetch
+MANDIR=${PREFIX}/share/man
+LICENSEDIR=${PREFIX}/share/licenses/TFetch
 
 # Process
 
@@ -49,6 +54,24 @@ clean:
 remove: clean
 	@$(rm) $(BINDIR)/$(TARGET)
 	@echo "Executable removed!"
+
+.PHONY: install
+install:
+	make
+	cp ./bin/tfetch /usr/bin/
+
+.PHONY: uninstall
+install:
+	rm /usr/bin/tfetch
+
+.PHONY: doc
+doc:
+	mkdir -p ${DESTDIR}${MANDIR}/man1
+	mkdir -p ${DESTDIR}${DOCDIR}
+	mkdir -p ${DESTDIR}${LICENSEDIR}
+	chmod 644 docs/man/TFetch.1 LICENSE.md
+	cp docs/man/TFetch.1 ${DESTDIR}${MANDIR}/man1
+	cp LICENSE.md ${DESTDIR}${LICENSEDIR}
 
 .PHONY: update
 update:

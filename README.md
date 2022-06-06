@@ -2,9 +2,43 @@
 
 This is a simple fetching application that is light weight and fast (as it is written in the programming language c).
 
+## Install
+
+### PreCompiled Binaries
+
+### From Source
+
+```console
+git clone https://github.com/Thamognya/TFetch.git
+cd TFetch
+make
+make doc
+make install
+```
+
+### Package Manager
+
+
 ## Usage
 
 ## Pictures
+
+
+## Uninstall
+
+### PreCompiled Binaries
+
+Remove it from the location you have kept the binary in
+
+### From source
+
+```console
+make unintsall
+```
+
+### Package Manager
+
+Uninstall it via the package manager
 
 # Author
 
