@@ -10,10 +10,14 @@ This is a simple fetching application that is light weight and fast (as it is wr
 
 ```console
 git clone https://github.com/Thamognya/TFetch.git
+
 cd TFetch
+
 make
+
 make doc
-make install
+
+make install # work in progress
 ```
 
 ### Package Manager
