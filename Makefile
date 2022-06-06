@@ -51,4 +51,7 @@ remove: clean
 	@echo "Executable removed!"
 
 .PHONY: update
-
+update:
+	git add .
+	git commit -m "Auto Update"
+	git remote | xargs -L1 git push --all
