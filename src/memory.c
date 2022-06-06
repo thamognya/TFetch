@@ -28,6 +28,9 @@ int memory()
         printf("\n");
         return 0;
     #elif __APPLE__
-    return 0;
+        // I need something to replace sys/sysinfo
+        return 0;
+    #else
+        return 1;
     #endif
 }

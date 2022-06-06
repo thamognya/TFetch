@@ -32,6 +32,7 @@ int username_hostname()
 		printf("@");
 		printf(BLU "%s" RESET, hostname);
 		printf("\n");
+  		return EXIT_SUCCESS;
 	#elif __APPLE__
 		// get hostname
 		int HOST_NAME_MAX = 1024; // for mac only
@@ -45,9 +46,12 @@ int username_hostname()
 		printf("@");
 		printf(BLU "%s" RESET, hostname);
 		printf("\n");
+  		return EXIT_SUCCESS;
+  	#else
+        printf("%s\n", "Your OS Not supported");
+        return 1;
 	#endif
 
-  	return EXIT_SUCCESS;
 }
 
 /*

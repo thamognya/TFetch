@@ -41,9 +41,10 @@
 
 int main()
 {
-    // if the os is windows then print error message else continue
+    // if the os is windows then print error message else continue cause I hate windows
     #ifdef _WIN32
         printf("%s\n", "This does not work on windows. If you would like to contribute to make this work make a pr or issue request in https://github.com/ThamognyaKodi/TFetch");
+        return 1;
     #else
         username_hostname();
         linebreak();
@@ -52,7 +53,6 @@ int main()
         uptime();
         shell();
         memory();
+        return 0;
     #endif
-
-    return 0;
 }

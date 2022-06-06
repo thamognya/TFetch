@@ -43,6 +43,9 @@ int uptime()
     #elif __APPLE__
         // need to find way to get uptime future
         return 0;
+    #else
+        printf("%s\n", "Your OS Not supported");
+        return 1;
     #endif
 
 }
