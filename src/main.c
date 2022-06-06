@@ -11,6 +11,8 @@
 #include "./include/shell.h"
 // get kernel()
 #include "./include/kernel.h"
+// get memeory()
+#include "./include/memory.h"
 // standard library
 #include <stdio.h>
 
@@ -49,6 +51,7 @@ int main()
         kernel();
         uptime();
         shell();
+        memory();
     #endif
 
     return 0;
