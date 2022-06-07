@@ -26,6 +26,7 @@ make install # work in progress
 
 ## Pictures
 
+![current_output](./assets/current_output.png)
 
 ## Uninstall
 

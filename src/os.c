@@ -20,10 +20,11 @@ int os()
     }
     // print the OS of linux
     // get the os name instead of os and kernel
-
+    /*
     char command[50];
     strcpy( command, "uname -o" );
     system(command);
+    */
     
     printf(RED "%s" RESET, "OS: ");
     printf("%s", uts.release);
