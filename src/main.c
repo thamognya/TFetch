@@ -13,7 +13,9 @@
 #include "./include/kernel.h"
 // get memeory()
 #include "./include/memory.h"
-// get colors
+// get colors()
+#include "./include/colors.h"
+// get color
 #include "./include/color.h"
 // standard library
 #include <stdio.h>
@@ -55,6 +57,7 @@ int main()
         uptime();
         shell();
         memory();
+        colors();
         return 0;
     #endif
 }
