@@ -6,6 +6,6 @@
 int linebreak()
 {
     // print the line break
-    printf(WHT "------------" RESET "\n");
+    printf(BMAG "------------" RESET "\n");
     return 0;
 }

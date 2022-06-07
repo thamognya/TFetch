@@ -4,7 +4,7 @@
 #define BRED     "\033[1;31m"
 #define BGRE   "\033[1;32m"
 #define BYEL  "\033[1;33m"
-#define BBLE    "\033[1;34m"
+#define BBLU    "\033[1;34m"
 #define BMAG "\033[1;35m"
 #define BCYN    "\033[1;36m"
 #define BWHT   "\033[1;37m"

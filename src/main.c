@@ -17,6 +17,8 @@
 #include "./include/colors.h"
 // get color
 #include "./include/color.h"
+// get logo
+#include "./include/logo.h"
 // standard library
 #include <stdio.h>
 
@@ -51,11 +53,14 @@ int main()
     #else
         username_hostname(); // user name @ hostname
         linebreak(); // -----
+        logo(); // get logo 
+        linebreak(); // ----- 
         os(); // the os
         kernel(); // the kernel
         uptime(); // uptime
         shell(); // shell used
         memory(); // memeory (free / total)
+        linebreak(); // -----
         colors(); // colors
         return 0;
     #endif

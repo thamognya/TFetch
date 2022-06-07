@@ -8,7 +8,7 @@
 // code refactored and changed from https://github.com/13-CF/afetch/blob/master/src/fetch.c
 int colors()
 {
-    printf(RED "%s\n" RESET, "COLORS: ");
+    //printf(RED "%s\n" RESET, "COLORS: ");
 
     for (int i = 30; i < 38; i++) 
     {

@@ -3,31 +3,14 @@
 // get colors
 #include "./include/color.h"
 
+// good idea from https://github.com/13-CF/afetch/blob/master/src/fetch.c
+
+
 int logo()
 {
     #ifdef __linux__
-        printf("%s\n", "Temporary");
+    	printf("%s\n", "tmp");
     #elif __APPLE__
-/*
-                    'c.        
-                 ,xNMM.         
-               .OMMMMo           
-               OMMM0,            
-     .;loddo:' loolloddol;.      
-   cKMMMMMMMMMMNWMMMMMMMMMM0:    
- .KMMMMMMMMMMMMMMMMMMMMMMMWd.    
- XMMMMMMMMMMMMMMMMMMMMMMMX.      
-;MMMMMMMMMMMMMMMMMMMMMMMM:       
-:MMMMMMMMMMMMMMMMMMMMMMMM:       
-.MMMMMMMMMMMMMMMMMMMMMMMMX.      
- kMMMMMMMMMMMMMMMMMMMMMMMMWd.    
- .XMMMMMMMMMMMMMMMMMMMMMMMMMMk   
-  .XMMMMMMMMMMMMMMMMMMMMMMMMK.   
-    kMMMMMMMMMMMMMMMMMMMMMMd     
-     ;KMMMMMMMWXXWMMMMMMMk.
-       .cooc,.    .,coo:.
-
-*/
         printf("%s\n", "");
     #endif
 
