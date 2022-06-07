@@ -5,7 +5,6 @@
 #elif __APPLE__
 #endif
 
-
 // get colors
 #include "./include/color.h"
 
