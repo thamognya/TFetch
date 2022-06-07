@@ -47,17 +47,17 @@ int main()
 {
     // if the os is windows then print error message else continue cause I hate windows
     #ifdef _WIN32
-        printf("%s\n", "This does not work on windows. If you would like to contribute to make this work make a pr or issue request in https://github.com/ThamognyaKodi/TFetch");
+        printf(RED "%s\n" RESET, "ERROR: This does not work on windows. If you would like to contribute to make this work make a pr or issue request in https://github.com/ThamognyaKodi/TFetch");
         return 1;
     #else
-        username_hostname();
-        linebreak();
-        os();
-        kernel();
-        uptime();
-        shell();
-        memory();
-        colors();
+        username_hostname(); // user name @ hostname
+        linebreak(); // -----
+        os(); // the os
+        kernel(); // the kernel
+        uptime(); // uptime
+        shell(); // shell used
+        memory(); // memeory (free / total)
+        colors(); // colors
         return 0;
     #endif
 }
