@@ -22,7 +22,6 @@ make install # work in progress
 
 ### Package Manager
 
-
 ## Usage
 
 ## Pictures
@@ -43,6 +42,21 @@ make unintsall
 ### Package Manager
 
 Uninstall it via the package manager
+
+# Contributing and TODO
+
+## TODO
+
+- Full MacOS support
+- Get Grepping for name of os and kernel working
+
+## Contributing
+
+via PRs or issues are fine
+
+- Fixing any of the TODO
+- new features
+- Fixing any bugs
 
 # Author
 
