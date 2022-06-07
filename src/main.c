@@ -13,6 +13,8 @@
 #include "./include/kernel.h"
 // get memeory()
 #include "./include/memory.h"
+// get colors
+#include "./include/color.h"
 // standard library
 #include <stdio.h>
 

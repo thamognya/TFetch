@@ -1,0 +1,22 @@
+// BOLD COLOURS
+#define BBLA   "\033[1;30m"
+#define BGRA    "\033[1;90m"
+#define BRED     "\033[1;31m"
+#define BGRE   "\033[1;32m"
+#define BYEL  "\033[1;33m"
+#define BBLE    "\033[1;34m"
+#define BMAG "\033[1;35m"
+#define BCYN    "\033[1;36m"
+#define BWHT   "\033[1;37m"
+// NORMAL COLOURS
+#define BLA   "\033[0;30m"
+#define RED     "\033[0;31m"
+#define GRE   "\033[0;32m"
+#define YEL  "\033[0;33m"
+#define BLU    "\033[0;34m"
+#define MAG "\033[0;35m"
+#define CYN    "\033[0;36m"
+#define WHT   "\033[0;37m"
+// OTHER
+#define RESET "\033[0;m"
+#define BITAL "\033[1;3m" 

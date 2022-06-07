@@ -1,5 +1,7 @@
 #include "./include/logo.h"
 #include <stdio.h>
+// get colors
+#include "./include/color.h"
 
 int logo()
 {
