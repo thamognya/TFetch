@@ -79,7 +79,7 @@ To start contributing, to have a consistent environment you can use the `docker-
 
 # License
 
-`SPDX-License-Identifier: MIT AND GPL-3.0-or-later`
+`SPDX-License-Identifier: AGPL-3.0-or-later`
 
 The following licenses are present in the licenses folder.
 
