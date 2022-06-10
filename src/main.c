@@ -53,7 +53,7 @@ int main()
         printf(RED "%s\n" RESET, "ERROR: This does not work on windows. If you would like to contribute to make this work make a pr or issue request in https://github.com/ThamognyaKodi/TFetch");
         return 1;
     #else
-        newline();
+        // newline(); looks dumb
         username_hostname(); // user name @ hostname
         linebreak(); // -----
         logo(); // get logo 
@@ -65,7 +65,7 @@ int main()
         memory(); // memeory (free / total)
         linebreak(); // -----
         colors(); // colors
-        newline();
+        newline(); // looks more normal
 
         return 0;
     #endif
