@@ -8,7 +8,7 @@
 #include <locale.h>
 
 // code refactored and changed from https://github.com/13-CF/afetch/blob/master/src/fetch.c
-int colors()
+void colors()
 {
     //printf(RED "%s\n" RESET, "COLORS: ");
 
@@ -22,5 +22,4 @@ int colors()
 	    printf("\033[1;%dm%s", j, ColorCharacter);
 	}
 	printf("\n");
-	return 0;
 }

@@ -6,7 +6,7 @@
 // get colors
 #include "./include/color.h"
 
-int shell()
+void shell()
 {
     /*  
 	char *shell = getenv("SHELL");
@@ -28,6 +28,4 @@ int shell()
 	printf(RED "%s" RESET, "SHELL: ");
 	printf("%s", shell);
 	printf("\n");
-
-    return 0;
 }

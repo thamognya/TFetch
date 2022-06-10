@@ -9,7 +9,7 @@
 // get colors
 #include "./include/color.h"
 
-int uptime()
+void uptime()
 {
     #ifdef __linux__
         // make type info
@@ -31,13 +31,10 @@ int uptime()
         printf(BLU "%s " RESET, "secs");
         // print new line
         printf("\n");
-        return 0;
     #elif __APPLE__
         // need to find way to get uptime future
-        return 0;
     #else
-        printf("%s\n", "Your OS Not supported");
-        return 1;
+        printf("%s\n", "Your OS is not supported. Please make a pr at https://github.com/Thamognya/TFetch");
     #endif
 
 }

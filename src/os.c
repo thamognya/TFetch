@@ -8,7 +8,7 @@
 // get colors
 #include "./include/color.h"
 
-int os()
+void os()
 {
     #ifdef __linux__
 		struct utsname uts;
@@ -55,12 +55,12 @@ int os()
 		printf("%s", " GNU/LINUX");
 		printf("%s%s%s", " [" , uts.machine , "]");
     	printf("\n");
-		return 0;
     #elif __APPLE__
         printf(RED "%s" RESET, "OS: ");
         printf("%s", "macOS");
         printf("\n");
-		return 0;
+	#else
+        printf("%s\n", "Your OS is not supported. Please make a pr at https://github.com/Thamognya/TFetch");
     #endif
 }
 

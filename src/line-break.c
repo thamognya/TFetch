@@ -3,9 +3,8 @@
 // get colors
 #include "./include/color.h"
 
-int linebreak()
+void linebreak()
 {
     // print the line break
     printf(BMAG "------------" RESET "\n");
-    return 0;
 }

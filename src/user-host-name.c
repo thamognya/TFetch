@@ -40,7 +40,7 @@ int username_hostname()
 		printf("\n");
   		return EXIT_SUCCESS;
   	#else
-        printf("%s\n", "Your OS Not supported");
+        printf("%s\n", "Your OS is not supported. Please make a pr at https://github.com/Thamognya/TFetch");
         return 1;
 	#endif
 

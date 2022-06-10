@@ -8,7 +8,7 @@
 // good idea from https://github.com/13-CF/afetch/blob/master/src/fetch.c
 
 
-int logo()
+void logo()
 {
     #ifdef __linux__
     /*
@@ -100,7 +100,6 @@ int logo()
             printf(WHT "%s\n" RESET, "---------------------------------");
             printf(WHT "%s\n" RESET, "Hey your linux distrobution is not supported, do you mind making a pr adding it to https://github.com/Thamognya/TFetch.git");
         }
-        return 0;
     #elif __APPLE__
             /*
                                    ___  ____
@@ -109,11 +108,18 @@ int logo()
             | | | | | | (_| | (__| |_| |___) |
             |_| |_| |_|\__,_|\___|\___/|____/
             */
-            printf(RED "%s\n" RESET, "                       ___  ____");
-            printf(YEL "%s\n" RESET, " _ __ ___   __ _  ___ / _ \\/ ___|");
-            printf(GRE "%s\n" RESET, "| '_ ` _ \\ / _` |/ __| | | \\___ \\");
-            printf(BLU "%s\n" RESET, "| | | | | | (_| | (__| |_| |___) |");
-            printf(MAG "%s\n" RESET, "|_| |_| |_|\\__,_|\\___|\\___/|____/");
-        return 0;
+        printf(RED "%s\n" RESET, "                       ___  ____");
+        printf(YEL "%s\n" RESET, " _ __ ___   __ _  ___ / _ \\/ ___|");
+        printf(GRE "%s\n" RESET, "| '_ ` _ \\ / _` |/ __| | | \\___ \\");
+        printf(BLU "%s\n" RESET, "| | | | | | (_| | (__| |_| |___) |");
+        printf(MAG "%s\n" RESET, "|_| |_| |_|\\__,_|\\___|\\___/|____/");
+    #else
+        printf(WHT "%s\n" RESET, " _____ _____    _       _");
+        printf(WHT "%s\n" RESET, "|_   _|  ___|__| |_ ___| |__");
+        printf(WHT "%s\n" RESET, "  | | | |_ / _ \\ __/ __| '_ \\");
+        printf(WHT "%s\n" RESET, "  | | |  _|  __/ || (__| | | |");
+        printf(WHT "%s\n" RESET, "  |_| |_|  \\___|\\__\\___|_| |_|");
+        printf(WHT "%s\n" RESET, "---------------------------------");
+        printf(WHT "%s\n" RESET, "Hey your OS is not supported, do you mind making a pr adding it to https://github.com/Thamognya/TFetch.git");
     #endif
 }

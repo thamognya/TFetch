@@ -9,6 +9,6 @@
 
 #define ColorCharacter "██"
 
-int colors();
+void colors();
 
 #endif

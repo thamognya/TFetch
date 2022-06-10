@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include "./include/newline.h"
 
-int newline()
+void newline()
 {
     printf("\n");
-    return 0;
 }
