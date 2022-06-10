@@ -14,7 +14,7 @@ int memory()
         // make type info
         struct sysinfo info;
         sysinfo(&info);
-        printf(RED "%s" RESET, "FREE/TOTAL RAM (mib): ");
+        printf(RED "%s" RESET, "FREE/TOTAL_RAM: ");
         printf("%02ld", (((info.freeram)/1024)/1024)); // total free ram = free + buffer/cache + swap total
         printf(BLU "%s" RESET, "/");
         printf("%02ld", (((info.totalram)/1024)/1024)); // total ram
