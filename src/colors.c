@@ -1,8 +1,8 @@
+#define _POSIX_C_SOURCE 200809L
 // header file (ColorCharacter is defined over there)
 #include "./include/colors.h"
 // colors file
 #include "./include/color.h"
-
 #include <stdio.h>
 #include <wchar.h>
 #include <locale.h>

@@ -1,9 +1,11 @@
+#define _POSIX_C_SOURCE 200809L
 #include "./include/logo.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 // get colors
 #include "./include/color.h"
+#include "./include/extra_functions.h"
 
 // good idea from https://github.com/13-CF/afetch/blob/master/src/fetch.c
 
@@ -25,40 +27,7 @@ void logo()
         if there are \ replace them with \\ in the printf (leaving the comment intact)
         use the macos one as an example
     */
-		// copied from https://github.com/13-CF/afetch/blob/master/src/fetch.c
-		// I need more time before I can start with this my self
-        // get the osname
-		char *osContents = malloc(512);
-		char *osname = malloc(512);
-		int line = 0;
-		FILE *f = fopen("/etc/os-release", "rt");
-		if (f == NULL || osContents == NULL)
-		{
-    		printf(RED "%s" RESET, "OS: ");
-    		printf("%s", "Linux");
-    		printf("\n");
-		}
-		while (fgets(osContents, 512, f)) {
-			snprintf(osname, 512, "%.*s", 511, osContents + 4);
-			if (strncmp(osname, "=", 1) == 0)
-				break;
-			line++;
-		}
-		fclose(f);
-		free(osContents);
-		if (strncmp(osname, "=", 1) == 0) {
-			int len = strlen(osname);
-			for (int i = 0; i < len; i++) {
-				if (osname[i] == '\"' ||
-				    osname[i] == '=') {
-					for (int ii = 0; ii < len; ii++)
-						osname[ii] =
-						    osname[ii + 1];
-					osname[strlen(osname) - 1] = '\0';
-				}
-			}
-		}
-        // check for the os name
+        char *osname = get_linux_distro();
         // using strncmp as it can define the number of charecters
         if (strncmp(osname, "Gentoo", 6) == 0) 
         {

@@ -1,3 +1,4 @@
+#define _POSIX_C_SOURCE 200809L
 #include "./include/main.h"
 // get functions hostname() and username()
 #include "./include/user-host-name.h"
@@ -21,6 +22,10 @@
 #include "./include/logo.h"
 // new line ()
 #include "./include/newline.h"
+// packages()
+#include "./include/packages.h"
+// extra functions()
+#include "./include/extra_functions.h"
 // standard library
 #include <stdio.h>
 
@@ -62,6 +67,7 @@ int main()
         kernel(); // the kernel
         uptime(); // uptime
         shell(); // shell used
+        packages();
         memory(); // memeory (free / total)
         linebreak(); // -----
         colors(); // colors

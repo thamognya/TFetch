@@ -1,3 +1,4 @@
+#define _POSIX_C_SOURCE 200809L
 #include "./include/shell.h"
 #include <stdio.h>
 #include <stdlib.h>
