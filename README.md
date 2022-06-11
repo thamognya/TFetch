@@ -59,6 +59,7 @@ Uninstall it via the package manager
 - Full MacOS support
 - Logo support for all linux distrobutions
 - differnt Package manager support for all linux distrobutions
+- Docker to work
 
 ## Contributing
 
