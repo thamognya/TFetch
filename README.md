@@ -6,6 +6,8 @@ This is a simple fetching application that is light weight and fast (as it is wr
 
 ### PreCompiled Binaries
 
+Just use the github releases found on the right hand side
+
 ### From Source
 
 ```console
@@ -17,12 +19,18 @@ make
 
 make doc
 
-make install # work in progress
+sudo make install
 ```
 
 ### Package Manager
 
+Comming soon.
+
 ## Usage
+
+```console
+tfetch
+```
 
 ## Pictures
 
@@ -37,7 +45,7 @@ Remove it from the location you have kept the binary in
 ### From source
 
 ```console
-make unintsall
+sudo make unintsall
 ```
 
 ### Package Manager
@@ -49,7 +57,8 @@ Uninstall it via the package manager
 ## TODO
 
 - Full MacOS support
-- Get Grepping for name of os and kernel working
+- Logo support for all linux distrobutions
+- differnt Package manager support for all linux distrobutions
 
 ## Contributing
 
