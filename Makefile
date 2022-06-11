@@ -55,6 +55,16 @@ remove: clean
 	@$(rm) $(BINDIR)/$(TARGET)
 	@echo "Executable removed!"
 
+.PHONY: install
+install:
+	mkdir -p ${PREFIX}
+	cp -r $(BINDIR)/$(TARGET) ${PREFIX}
+	@echo "Executable installed!"
+
+.PHONY: uninstall
+uninstall:
+	@$(rm) ${PREFIX}/$(TARGET)
+
 .PHONY: doc
 doc:
 	mkdir -p ${DESTDIR}${MANDIR}/man1
