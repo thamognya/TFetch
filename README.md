@@ -17,7 +17,7 @@ cd TFetch
 
 make
 
-make doc
+sudo make doc
 
 sudo make install
 ```
