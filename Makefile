@@ -11,7 +11,7 @@
 TOPDIR := ./src/
 IVAR := -I. -I $(TOPDIR)/include/
 PREFIX=/usr/local
-BINDIR=${PREFIX}/bin
+INSTALLBINDIR=${PREFIX}/bin
 DOCDIR=${PREFIX}/share/doc/TFetch
 MANDIR=${PREFIX}/share/man
 LICENSEDIR=${PREFIX}/share/licenses/TFetch
@@ -57,13 +57,14 @@ remove: clean
 
 .PHONY: install
 install:
-	mkdir -p ${PREFIX}
-	cp -r $(BINDIR)/$(TARGET) ${PREFIX}
+	mkdir -p ${INSTALLBINDIR}
+	cp -r $(BINDIR)/$(TARGET) ${INSTALLBINDIR}
 	@echo "Executable installed!"
 
 .PHONY: uninstall
 uninstall:
-	@$(rm) ${PREFIX}/$(TARGET)
+	@$(rm) ${INSTALLBINDIR}/$(TARGET)
+	@echo "Executable removed!"
 
 .PHONY: doc
 doc:
