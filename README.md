@@ -60,6 +60,7 @@ Uninstall it via the package manager
 - Logo support for all linux distrobutions
 - differnt Package manager support for all linux distrobutions
 - Docker to work
+- config file
 
 ## Contributing
 
