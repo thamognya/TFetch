@@ -15,11 +15,22 @@ void packages()
         {
 			pkgs = get_shell_output("qlist -I | wc -l");
 			printf(RED "%s" RESET, "PACKAGES: ");
-			printf("%s", pkgs);
+			printf("%s (portage)", pkgs);
 			printf("\n");
         }
         else if (strncmp(osname, "Arch", 4) == 0)
 		{
+            pkgs = get_shell_output("pacman -Q | wc -l");
+			printf(RED "%s" RESET, "PACKAGES: ");
+			printf("%s (pacman)", pkgs);
+			printf("\n");
+        }
+        else if (strncmp(osname, "Debian GNU/Linux", 16) == 0)
+        {
+            pkgs = get_shell_output("dpkg -l | tail -n+6 | wc -l");
+			printf(RED "%s" RESET, "PACKAGES: ");
+			printf("%s (apt)", pkgs);
+			printf("\n");
         }
         else
         {

@@ -59,6 +59,21 @@ void logo()
             printf(BLU "%s\n" RESET, " / ___ \\| | | (__| | | |");
             printf(BLU "%s\n" RESET, "/_/   \\_\\_|  \\___|_| |_|");
         }
+        else if (strncmp(osname, "Debian GNU/Linux", 16) == 0)
+        {
+            /*
+ ____       _     _
+|  _ \  ___| |__ (_) __ _ _ __
+| | | |/ _ \ '_ \| |/ _` | '_ \
+| |_| |  __/ |_) | | (_| | | | |
+|____/ \___|_.__/|_|\__,_|_| |_|
+            */
+            printf(RED "%s\n" RESET, " ____       _     _");
+            printf(RED "%s\n" RESET, "|  _ \\  ___| |__ (_) __ _ _ __");
+            printf(RED "%s\n" RESET, "| | | |/ _ \\ '_ \\| |/ _` | '_ \\");
+            printf(RED "%s\n" RESET, "| |_| |  __/ |_) | | (_| | | | |");
+            printf(RED "%s\n" RESET, "|____/ \\___|_.__/|_|\\__,_|_| |_|");
+        }
         else
         {
             printf(WHT "%s\n" RESET, " _____ _____    _       _");

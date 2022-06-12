@@ -26,6 +26,8 @@
 #include "./include/packages.h"
 // extra functions()
 #include "./include/extra_functions.h"
+// disk()
+#include "./include/disk.h"
 // standard library
 #include <stdio.h>
 
@@ -69,6 +71,7 @@ int main()
         shell(); // shell used
         packages();
         memory(); // memeory (free / total)
+        disk(); // disk space
         linebreak(); // -----
         colors(); // colors
         newline(); // looks more normal
