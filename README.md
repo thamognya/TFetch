@@ -84,7 +84,7 @@ Library-list (apart from <stdio.h>):
 - <stdlib.h>
 - <sys/sysinfo.h>
 
-# Contributing
+# Contributing working on this
 
 To start contributing, to have a consistent environment you can use the `docker-compose up -d` and then 
 
