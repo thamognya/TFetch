@@ -19,7 +19,7 @@ void memory()
         unsigned long free_ram = (((info.freeram)/1024)/1024);
         printf(RED "%s" RESET, "FREE/TOTAL_RAM: ");
         printf("%02ldMiB", free_ram); // total free ram = free + buffer/cache + swap total
-        printf(BLU "%s" RESET, " / ");
+        printf("%s", " / ");
         printf("%02ldMiB", total_ram); // total ram
         printf("\n");
     #elif __APPLE__
