@@ -23,7 +23,7 @@ void uptime()
         printf("%02ld ", info.uptime/3600);
         // print hours
         printf(BLU "%s " RESET, "hours");
-        // print the uptime in hours
+        // print the uptime in minutes
         printf("%02ld ", info.uptime%3600/60);
         // print mins
         printf(BLU "%s " RESET, "mins");
@@ -43,7 +43,7 @@ void uptime()
         printf("%02ld ", (int) uptime / 3600);
         // print hours
         printf(BLU "%s " RESET, "hours");
-        // print the uptime in hours
+        // print the uptime in minutes
         printf("%02ld ", (int)uptime % 3600 / 60);
         // print mins
         printf(BLU "%s " RESET, "mins");
