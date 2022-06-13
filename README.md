@@ -24,7 +24,7 @@ sudo make install
 
 ### Package Manager
 
-Comming soon.
+Coming soon.
 
 ## Usage
 
@@ -57,8 +57,8 @@ Uninstall it via the package manager
 ## TODO
 
 - Full MacOS support
-- Logo support for all linux distrobutions
-- differnt Package manager support for all linux distrobutions
+- Logo support for all linux distributions
+- Package manager support for all linux distributions
 - Docker to work
 - config file
 
@@ -67,7 +67,7 @@ Uninstall it via the package manager
 via PRs or issues are fine
 
 - Fixing any of the TODO
-- new features
+- New features
 - Fixing any bugs
 
 # Author
@@ -94,4 +94,4 @@ To start contributing, to have a consistent environment you can use the `docker-
 
 The following licenses are present in the licenses folder.
 
-If you are going to use my code without my permision by forking it, you must follow the AGPL-3.0-or-later licenses.
+If you are going to use my code without my permission by forking it, you must follow the AGPL-3.0-or-later licenses.
