@@ -32,9 +32,23 @@ void packages()
 			printf("%s (apt)", pkgs);
 			printf("\n");
         }
+	    else if (strncmp(osname, "void", 4) == 0)
+	{
+	    pkgs = get_shell_output("xbps-query -l | wc -l");
+			printf(RED "%s" RESET, "PACKAGES: ");
+			printf("%s (xbps)", pkgs);
+			printf("\n");
+	}
+	else if (strncmp(osname, "NixOS", 5) == 0)
+	{
+	    pkgs = get_shell_output("nix-store -q --requisites /run/current-system/sw | wc -l");
+			printf(RED "%s" RESET, "PACKAGES: ");
+			    printf("%s (nix)", pkgs);
+			   printf("\n");
+	      }
         else if (strncmp(osname, "EndeavourOS", 11) == 0)
         {
-            pkgs = get_shell_output("pacman -Q | wc -l");
+      pkgs = get_shell_output("pacman -Q | wc -l");
 			printf(RED "%s" RESET, "PACKAGES: ");
 			printf("%s (pacman)", pkgs);
 			printf("\n");
