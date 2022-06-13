@@ -41,7 +41,7 @@ void packages()
         }
         else
         {
-            printf("linux distro not yet supported. Please Make a pr at https://github.com/Thamognya/TFetch");
+            printf("Linux distro not yet supported. Please make a pr at https://github.com/Thamognya/TFetch");
         }
     #elif __APPLE__
     #else
