@@ -27,7 +27,9 @@ void logo()
         if there are \ replace them with \\ in the printf (leaving the comment intact)
         use the macos one as an example
     */
-        char *osname = get_linux_distro();
+				char osname[512];
+				char oscontent[512];
+				get_linux_distro(oscontent, osname);
         // using strncmp as it can define the number of charecters
         if (strncmp(osname, "Gentoo", 6) == 0) 
         {

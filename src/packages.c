@@ -9,25 +9,27 @@
 void packages()
 {
     #ifdef __linux__
-		char *pkgs;
-		char *osname = get_linux_distro();
+		char pkgs[32];
+		char osname[512];
+		char oscontent[512];
+		get_linux_distro(oscontent, osname);
         if (strncmp(osname, "Gentoo", 6) == 0) 
         {
-			pkgs = get_shell_output("qlist -I | wc -l");
+			get_shell_output("qlist -I | wc -l", pkgs);
 			printf(RED "%s" RESET, "PACKAGES: ");
 			printf("%s (portage)", pkgs);
 			printf("\n");
         }
         else if (strncmp(osname, "Arch", 4) == 0)
 		{
-            pkgs = get_shell_output("pacman -Q | wc -l");
+            get_shell_output("pacman -Q | wc -l", pkgs);
 			printf(RED "%s" RESET, "PACKAGES: ");
 			printf("%s (pacman)", pkgs);
 			printf("\n");
         }
         else if (strncmp(osname, "Debian GNU/Linux", 16) == 0)
         {
-            pkgs = get_shell_output("dpkg -l | tail -n+6 | wc -l");
+            get_shell_output("dpkg -l | tail -n+6 | wc -l", pkgs);
 			printf(RED "%s" RESET, "PACKAGES: ");
 			printf("%s (apt)", pkgs);
 			printf("\n");

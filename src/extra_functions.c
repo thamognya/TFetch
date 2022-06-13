@@ -7,7 +7,7 @@
 #include <string.h>
 #include <sys/utsname.h>
 
-char *get_shell_output(const char *command) // get output of shell command not to use for shell env as it is done by /bin/sh
+char *get_shell_output(const char *command, char *returnOutput) // get output of shell command not to use for shell env as it is done by /bin/sh
 {
     FILE *output = popen(command, "r");
     if (output == NULL)
@@ -16,7 +16,6 @@ char *get_shell_output(const char *command) // get output of shell command not t
     }
     else
     {
-        char *returnOutput = malloc(256);
         const int scanf_return = fscanf(output, "%[^\n]256s", returnOutput);
         pclose(output);
         if (scanf_return == EOF)
@@ -32,12 +31,10 @@ char *get_shell_output(const char *command) // get output of shell command not t
 }
 
 // since this specific part is getting reused a lot I am going to make a function here to not copy paste that much
-char *get_linux_distro()
+char *get_linux_distro(char *oscontent, char *osname)
 {
     struct utsname uts;
     uname(&uts);
-    char *oscontent = malloc(512);
-    char *osname = malloc(512);
     int line = 0;
     FILE *f = fopen("/etc/os-release", "rt");
     if (f == NULL || oscontent == NULL)
@@ -56,7 +53,6 @@ char *get_linux_distro()
             line++;
         }
         fclose(f);
-        free(oscontent);
         if (strncmp(osname, "=", 1) == 0)
         {
             int len = strlen(osname);
