@@ -1,5 +1,7 @@
 #define _POSIX_C_SOURCE 200809L
 #include "./include/kernel.h"
+
+#include "../config/config.h"
 // get colors
 #include "./include/color.h"
 #include <stdio.h>

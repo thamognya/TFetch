@@ -2,6 +2,7 @@
 #include "./include/color.h"
 #define _POSIX_C_SOURCE 200809L
 
+#include "../config/config.h"
 #include <stdio.h>
 
 #ifdef __linux__

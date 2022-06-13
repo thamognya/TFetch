@@ -7,6 +7,8 @@
 #include "./include/color.h"
 #include "./include/extra_functions.h"
 
+#include "../config/config.h"
+
 // good idea from https://github.com/13-CF/afetch/blob/master/src/fetch.c
 
 

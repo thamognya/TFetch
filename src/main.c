@@ -28,6 +28,8 @@
 #include "./include/extra_functions.h"
 // disk()
 #include "./include/disk.h"
+// config
+#include "../config/config.h"
 // standard library
 #include <stdio.h>
 

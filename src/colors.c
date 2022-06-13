@@ -3,6 +3,8 @@
 #include "./include/colors.h"
 // colors file
 #include "./include/color.h"
+// config file
+#include "../config/config.h"
 
 #include <stdio.h>
 #include <wchar.h>
