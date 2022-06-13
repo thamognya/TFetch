@@ -36,6 +36,10 @@ tfetch
 
 ![current_output](./assets/current_output.png)
 
+# Config
+
+You can use the the config/config.h for configuring the fetching utility
+
 ## Uninstall
 
 ### PreCompiled Binaries
