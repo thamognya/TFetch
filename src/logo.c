@@ -74,6 +74,23 @@ void logo()
             printf(RED "%s\n" RESET, "| |_| |  __/ |_) | | (_| | | | |");
             printf(RED "%s\n" RESET, "|____/ \\___|_.__/|_|\\__,_|_| |_|");
         }
+        else if (strncmp(osname, "EndeavourOS", 11) == 0)
+        {
+            /*
+  ______           _                                   ____   _____
+ |  ____|         | |                                 / __ \ / ____|
+ | |__   _ __   __| | ___  __ ___   _____  _   _ _ __| |  | | (___
+ |  __| | '_ \ / _` |/ _ \/ _` \ \ / / _ \| | | | '__| |  | |\___ \
+ | |____| | | | (_| |  __/ (_| |\ V / (_) | |_| | |  | |__| |____) |
+ |______|_| |_|\__,_|\___|\__,_| \_/ \___/ \__,_|_|   \____/|_____/
+            */
+            printf(MAG "%s\n" RESET, " ______           _                                   ____   _____");
+            printf(MAG "%s\n" RESET, "|  ____|         | |                                 / __ \\ / ____|");
+            printf(MAG "%s\n" RESET, "| |__   _ __   __| | ___  __ ___   _____  _   _ _ __| |  | | (___");
+            printf(MAG "%s\n" RESET, "|  __| | '_ \\ / _` |/ _ \\/ _` \\ \\ / / _ \\| | | | '__| |  | |\\___ \\");
+            printf(MAG "%s\n" RESET, "| |____| | | | (_| |  __/ (_| |\\ V / (_) | |_| | |  | |__| |____) |");
+            printf(MAG "%s\n" RESET, "|______|_| |_|\\__,_|\\___|\\__,_| \\_/ \\___/ \\__,_|_|   \\____/|_____/");
+        }
         else
         {
             printf(WHT "%s\n" RESET, " _____ _____    _       _");
@@ -82,7 +99,7 @@ void logo()
             printf(WHT "%s\n" RESET, "  | | |  _|  __/ || (__| | | |");
             printf(WHT "%s\n" RESET, "  |_| |_|  \\___|\\__\\___|_| |_|");
             printf(WHT "%s\n" RESET, "---------------------------------");
-            printf(WHT "%s\n" RESET, "Hey your linux distrobution is not supported, do you mind making a pr adding it to https://github.com/Thamognya/TFetch.git");
+            printf(WHT "%s\n" RESET, "Hey your linux distribution is not supported, do you mind making a pr adding it to https://github.com/Thamognya/TFetch.git");
         }
     #elif __APPLE__
             /*
