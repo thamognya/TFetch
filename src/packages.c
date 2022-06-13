@@ -32,6 +32,13 @@ void packages()
 			printf("%s (apt)", pkgs);
 			printf("\n");
         }
+        else if (strncmp(osname, "EndeavourOS", 11) == 0)
+        {
+            pkgs = get_shell_output("pacman -Q | wc -l");
+			printf(RED "%s" RESET, "PACKAGES: ");
+			printf("%s (pacman)", pkgs);
+			printf("\n");
+        }
         else
         {
             printf("linux distro not yet supported. Please Make a pr at https://github.com/Thamognya/TFetch");
