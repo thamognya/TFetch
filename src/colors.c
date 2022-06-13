@@ -21,5 +21,5 @@ void colors()
     {
 	    printf("\033[1;%dm%s", j, ColorCharacter);
 	}
-	printf("\n");
+	printf("\033[0m\n");
 }
