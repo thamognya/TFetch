@@ -7,6 +7,7 @@
 ████████████████████████
  */
 
+#define ColorCharacter "██"
 
 void colors();
 
