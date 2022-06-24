@@ -13,9 +13,7 @@ void os()
     #ifdef __linux__
 	    struct utsname uts;
 	    uname(&uts);
-		char osname[512];
-		char oscontent[512];
-		get_linux_distro(oscontent, osname);
+		char *osname = get_linux_distro();
     	printf(RED "%s" RESET, "OS: ");
     	printf("%s", osname);
 		printf("%s", " GNU/LINUX");
