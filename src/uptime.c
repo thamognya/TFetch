@@ -34,6 +34,7 @@ void uptime()
         // print new line
         printf("\n");
     #elif __APPLE__
+        /* fix this later
         struct timeval boottime;
         time_t bsec = boottime.tv_sec, csec = time(NULL);
         double uptime = difftime(csec, bsec);
@@ -53,6 +54,7 @@ void uptime()
         printf(BLU "%s " RESET, "secs");
         // print new line
         printf("\n");
+        */
     #else
         printf("%s\n", "Your OS is not supported. Please make a pr at https://github.com/Thamognya/TFetch");
     #endif
