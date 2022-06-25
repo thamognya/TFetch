@@ -40,15 +40,15 @@ void uptime()
         // print uptime
         printf(RED "%s" RESET, "UPTIME: ");
         // print the uptime / 3600 to get hours
-        printf("%02ld ", (int) uptime / 3600);
+        printf("%02d ", (int) uptime / 3600);
         // print hours
         printf(BLU "%s " RESET, "hours");
         // print the uptime in minutes
-        printf("%02ld ", (int)uptime % 3600 / 60);
+        printf("%02d ", (int)uptime % 3600 / 60);
         // print mins
         printf(BLU "%s " RESET, "mins");
         // print hte up time in seconds
-        printf("%02ld ", (int)uptime % 60);
+        printf("%02d ", (int)uptime % 60);
         // print seconds
         printf(BLU "%s " RESET, "secs");
         // print new line
