@@ -24,4 +24,5 @@ void disk()
         printf(RED "%s" RESET, "FREE/TOTAL_DISK: ");
         printf("%luGB / %luGB\n", free_space, total_space);
     #elif __APPLE__
+    #endif
 }
