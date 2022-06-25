@@ -4,7 +4,7 @@
 #ifdef __linux__
     #include <sys/sysinfo.h>
 #elif __APPLE__
-    puts("Your operating system currently is not supported.");
+    //ps("Your operating system currently is not supported.");
 #endif
 
 // get colors
