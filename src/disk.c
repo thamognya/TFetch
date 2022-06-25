@@ -14,12 +14,14 @@
 
 void disk()
 {
-    struct statvfs st;
-    statvfs("/", &st);
-    unsigned long free_space = st.f_bfree * st.f_frsize;
-    free_space = free_space / 1024 / 1024 / 1024;
-    unsigned long total_space = st.f_blocks * st.f_frsize;
-    total_space = total_space / 1024 / 1024 / 1024;
-    printf(RED "%s" RESET, "FREE/TOTAL_DISK: ");
-    printf("%luGB / %luGB\n", free_space, total_space);
+    #ifdef __linux__
+        struct statvfs st;
+        statvfs("/", &st);
+        unsigned long free_space = st.f_bfree * st.f_frsize;
+        free_space = free_space / 1024 / 1024 / 1024;
+        unsigned long total_space = st.f_blocks * st.f_frsize;
+        total_space = total_space / 1024 / 1024 / 1024;
+        printf(RED "%s" RESET, "FREE/TOTAL_DISK: ");
+        printf("%luGB / %luGB\n", free_space, total_space);
+    #elif __APPLE__
 }
