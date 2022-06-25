@@ -22,7 +22,6 @@ void memory()
         printf("%02ldMiB / %02ldMiB", free_ram, total_ram); // total free ram = free + buffer/cache + swap total
         printf("\n");
     #elif __APPLE__
-        return;
         // I need something to replace sys/sysinfo
     #else
         printf("%s\n", "Your OS is not supported. Please make a pr at https://github.com/Thamognya/TFetch");
