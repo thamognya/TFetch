@@ -5,8 +5,10 @@
 #ifdef __linux__
     #include <sys/sysinfo.h>
 #elif __APPLE__
+    /*
     #include <sys/sysctl.h>
     #include <time.h>
+    */
 #endif
 // get colors
 #include "./include/color.h"
