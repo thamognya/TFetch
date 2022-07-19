@@ -49,7 +49,7 @@ Remove it from the location you have kept the binary in
 ### From source
 
 ```console
-sudo make unintsall
+sudo make uninstall
 ```
 
 ### Package Manager
