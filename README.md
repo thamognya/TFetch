@@ -1,3 +1,7 @@
+update: this repo is going to be archieved as I have other works and this project most likely would be neglected.
+
+<hr>
+
 # TFetch
 
 This is a simple fetching application that is light weight and fast (as it is written in the programming language c).
