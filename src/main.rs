@@ -1,3 +1,3 @@
 fn main() {
-    println!("Tfetch");
+    println!("Tfetch in rust");
 }
