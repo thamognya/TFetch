@@ -2,7 +2,16 @@
 name = "tfetch"
 version = "0.1.0"
 edition = "2021"
+authors = ["Thamognya Kodi <contact@thamognya.com>"]
+readme = "README.md"
+license = "AGPL-3.0-or-later"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "tfetch"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tfetch"
+path = "src/main.rs"
 
 [dependencies]
